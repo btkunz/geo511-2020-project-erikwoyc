@@ -40,7 +40,7 @@ Here's my first code chunk.
 
 Load any required packages in a code chunk (you may need to install some packages):
 
-```{r, message=F, warning=F}
+```{r, message=F, warning=F} 
 library(tidyverse)
 library(ggplot2)
 library(ggmap)
@@ -58,6 +58,7 @@ library(sp)
 library(sf)
 library(rgdal)
 library(RColorBrewer)
+library(kableExtra)
 knitr::opts_chunk$set(cache=TRUE)  # cache the results for quick compiling
 ```
 
@@ -141,7 +142,7 @@ basemap <- get_stamenmap(
 # View Map
 BFMap <- ggmap(basemap) + 
   labs(title="Buffalo Basemap")
-BFMap
+BFMap  
 ```
 
 ```{r}
@@ -169,7 +170,7 @@ SingleFam20 <- ggmap(basemap) +
        caption="Open Data Buffalo")
 SingleFam20
 ```
-# Conclusions
+# Conclusions  
 
 [~200 words]
 
