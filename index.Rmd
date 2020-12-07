@@ -58,6 +58,7 @@ library(sp)
 library(sf)
 library(rgdal)
 library(RColorBrewer)
+library(kableExtra)
 knitr::opts_chunk$set(cache=TRUE)  # cache the results for quick compiling
 ```
 
@@ -167,7 +168,7 @@ SingleFam20 <- ggmap(basemap) +
   labs(title="Distribution of Buffalo Home Prices",
        subtitle="Property Prices (2019 - 2020)",
        caption="Open Data Buffalo")
-SingleFam20
+SingleFam20 
 ```
 # Conclusions
 
