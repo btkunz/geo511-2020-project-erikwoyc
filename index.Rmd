@@ -4,7 +4,7 @@ author: Erik Woyciesjes
 subtitle: "2017 - 2020"
 ---
 
-# Introduction
+# Introduction        I'd be interested to hear a bit more about what sparked your interest in this issue
 
 The purpose of this project is to look at single family housing in the City of Buffalo. Using the assessed values of single family properties (City Assessment Rolls), this project aims to examine the spatial distribution and percent change of single family housing prices across the city of Buffalo. To extend this study, median household prices within neighborhoods will also be calculated to potentially illuminate trends in the changes in price of single family homes across neighborhoods. 
 
@@ -58,6 +58,7 @@ library(sp)
 library(sf)
 library(rgdal)
 library(RColorBrewer)
+library(kableExtra)
 knitr::opts_chunk$set(cache=TRUE)  # cache the results for quick compiling
 ```
 
@@ -167,9 +168,9 @@ SingleFam20 <- ggmap(basemap) +
   labs(title="Distribution of Buffalo Home Prices",
        subtitle="Property Prices (2019 - 2020)",
        caption="Open Data Buffalo")
-SingleFam20
+SingleFam20 I really like both of these maps displaying the home values for different areas of the city, though could you elaborate on the meaning of the numbers in the legend for both of them? As it stands the numbers range from 8 to 14 so I'd be interested to know what those mean.
 ```
-# Conclusions
+# Conclusions       I'd be interested to see what you feel the spatial distribution of changes in single family home prices means for different neighborhoods of Buffalo!
 
 [~200 words]
 
